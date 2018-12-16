@@ -107,13 +107,8 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // ValinorCoin: 1 day
         nTargetSpacing = 1 * 60;  // ValinorCoin: 1 minute
-        
-        if ((nLastPOWBlock == 0))
-
-        if ((nLastPOWBlock < 300 && nLastPOWBlock > 0));
-    
-        else if ((nLastPOWBlock < 125000 && nLastPOWBlock > 121094));
-
+        nLastPOWBlock = 300;
+        if ((nLastPOWBlock < 125000 && nLastPOWBlock > 121094));
         nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMasternodeCollateralLimit = 50000;
