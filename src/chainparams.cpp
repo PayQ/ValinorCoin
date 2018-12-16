@@ -110,9 +110,9 @@ public:
         {
         int  nLastPOWBlock;
         
-        if (nLastPOWBlock > 0 && nLastPOWBlock > 300)
+        if (nLastPOWBlock > 0 && nLastPOWBlock < 300)
         
-        else if (nLastPOWBlock > 12159 && nLastPOWBlock > 125000)
+        else if (nLastPOWBlock > 12159 && nLastPOWBlock < 125000)
         
         doSomething();
         }
