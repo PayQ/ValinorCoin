@@ -110,7 +110,7 @@ public:
         
         if ((nLastPOWBlock == 0))
 
-        else if ((nLastPOWBlock < 300 && nLastPOWBlock > 0));
+        if ((nLastPOWBlock < 300 && nLastPOWBlock > 0));
     
         else if ((nLastPOWBlock < 125000 && nLastPOWBlock > 121094));
 
