@@ -54,11 +54,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("1a48a3140b205c5a182662d6187fff375074c5f0455fb4f608238ca4939dd907"));
+    (0, uint256("1a48a3140b205c5a182662d6187fff375074c5f0455fb4f608238ca4939dd907"))
+    (121155, uint256("bf6bcd66551fb72bae156a96016663253253fe0e1582bf53af39f1d45afc8490"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1537376400, // * UNIX timestamp of last checkpoint block
-    0,          // * total number of transactions between genesis and last checkpoint
+    1545015600, // * UNIX timestamp of last checkpoint block
+    247521,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -106,12 +107,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // ValinorCoin: 1 day
         nTargetSpacing = 1 * 60;  // ValinorCoin: 1 minute
-        
-        int nLastPOWBlock;{
-        
-        if(nLastPOWBlock>121000 && nLastPOWBlock<130000);
-        }
-        
+        nLastPOWBlock = 300;
         nMaturity = 50;
         nMasternodeCountDrift = 20;
         nMasternodeCollateralLimit = 50000;
